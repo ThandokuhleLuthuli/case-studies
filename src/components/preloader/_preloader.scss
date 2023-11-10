@@ -1,0 +1,35 @@
+@import "/src/styles/variables";
+
+
+@keyframes move  {
+    0% {
+        left: 0;
+      }
+      50% {
+        left: 50%;
+      }
+      100% {
+        left: 100%;
+      } 
+}
+
+.preloader {
+    text-align: center;
+    max-width: 1279px;
+    width: 100%;
+    margin: 0 auto;
+
+    &-text {
+        font-family: $inter;
+    }
+
+    &-bar {
+        display: block;
+        width: 41px;
+        height: 4px;
+        position: relative;
+        background-color: $primary-active;
+        animation: move 1s linear infinite;
+    }
+}
+
