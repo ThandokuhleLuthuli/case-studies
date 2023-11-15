@@ -1,0 +1,87 @@
+@import "/src/styles/variables";
+
+.section {
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    &-container {
+        display: flex;
+    }
+    &-title {
+        margin: 0;
+        text-align: left;
+        font-size: $medium;
+        line-height: 30px;
+        font-family: $inter;
+        font-weight: $normal;
+        padding-bottom: 50px;
+    
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 40px;
+          height: 4px;
+          background-color: $primary-active;
+          margin-right: 20px;
+          margin-bottom: 5px;
+        }
+    }
+
+    &-headline {
+        font-family: $inter;
+        font-size: 48px; //no variable
+        font-weight: $bold;
+        line-height: 67.2px;
+        text-align: left;
+        color : $dark-gray;
+        padding-bottom: 50px;
+    }
+
+    &-brands {
+        &-container {
+            display: flex;
+           .image-wrapper {
+            display: block;
+            width: 100%;
+            padding: 30px;
+        
+            .image {
+                height: 50px;
+            }
+           }
+        }
+    }
+    
+}
+
+
+@include media(tablet) {
+    .section {
+      
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@include media(mobile) {
+    .section {
+        &-container {
+            flex-direction: column;
+        }
+        &-brands {
+            &-container {
+                .image-wrapper {
+                    padding: 10px;
+                }
+            }
+        }
+
+        &-headline {
+            font-size: 32px;
+            line-height: 45px;
+        }
+      
+    }
+  
+   }

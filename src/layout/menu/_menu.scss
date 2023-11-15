@@ -1,0 +1,86 @@
+@import "/src/styles/variables";
+
+.menu {
+
+    background-color: $primary-menu;
+    padding: 20px 80px;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+        &-container {
+            display: flex;
+        }
+
+        
+    }
+    
+    &-item {
+        list-style: none;
+        &-link {
+            display: inline-block;
+            margin-right: 8px;
+            font-family: $inter;
+            color: $white;
+            &:hover {
+                color: $primary-active;
+            }
+        }
+    }
+
+    &-button {
+        display: inline-block;
+        .image-wrapper {
+            display: none;
+        }
+        
+    }
+}
+
+@include media(desktopxl) {
+    .menu {
+        width: 100%;
+    }
+}
+@include media(desktop) {
+    .menu {
+        width: 100%;
+    }
+}
+
+@include media(tablet) {
+    .menu {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@include media(mobile) {
+    .menu {
+
+       &-inner {
+
+        &-container {
+            display: none;
+        }
+       }
+
+       &-button {
+        
+        .image-wrapper {
+            display: inline-block;
+            .image {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        
+    }
+    }
+  
+   }

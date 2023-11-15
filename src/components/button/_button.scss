@@ -1,0 +1,26 @@
+@import "/src/styles/variables";
+
+.button {
+    font-family: $inter;
+    font-size: $small; 
+    font-weight: $bold;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    &--primary {
+        color: $white;
+        background-color: $primary-menu;
+        &:hover {
+            background-color: $primary-active;
+        }
+    }
+
+    &--secondary {
+        color: $primary-menu;
+        &:hover {
+            color: $white;
+            background-color: $primary-active;
+        }
+    }
+}

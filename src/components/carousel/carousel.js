@@ -7,7 +7,7 @@ import 'swiper/swiper-bundle.css'; // import styles bundle
 import { slideOptions } from '../../data/datafile'; //import slide options for carousel slide
 
 
-function Carousel({}) {
+function Carousel() {
 
     //state variable to hold the data. initialised with an empty array
     const [data,setData] = useState([]);
@@ -49,7 +49,6 @@ function Carousel({}) {
   //Here we are looping through the duplicate slides using array.map() and displaying them
     return (
     <div className="carousel">
-          <h2 className='carousel-title'>case studies</h2>
     <Swiper
       direction={slideOptions.direction}
       slidesPerView={slideOptions.slidesPerView} 
@@ -69,13 +68,13 @@ function Carousel({}) {
       {duplicateSlides.map((slide,index) => (
         <SwiperSlide key={index} className='carousel-slide'>
       <div className='carousel-slide-inner-wrapper' >
-          <a href='#' className='carousel-slide-link'>
+          <div className='carousel-slide-link'>
               <Image src={duplicateSlides ? slide.imageUrl:"/"} alt={duplicateSlides  ? slide.title:"No image data"} mediaSet={duplicateSlides ? slide.imageUrl:"/"}/>
               <div className='carousel-slide-copy'>
                 {duplicateSlides ? (<p className='carousel-slide-title'>{slide.title}</p>):(<p>No title data</p>)}
                 {duplicateSlides ? (<p className='carousel-slide-description'>{slide.description}</p>):(<p className='carousel-slide-description'>No description data</p>)}
               </div>
-          </a>
+          </div>
         </div>
         </SwiperSlide>
       ))}

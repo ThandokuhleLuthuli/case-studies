@@ -1,0 +1,178 @@
+@import "/src/styles/variables";
+
+.footer {
+   
+    background-color: $primary;
+    display: block;
+    margin-top: 80px;
+    padding: 71px 80px 20px 80px;
+    
+
+    &-container {
+        
+        max-width: 1280px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    &-row {
+        display: flex;
+        padding-top: 34px;
+        &:last-child {
+            padding-top: 100px;
+            padding-bottom: 20px;
+            .footer-column {
+                &--right {
+                    .footer-copy:last-child {
+                        padding-top: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-column {
+        &-inner {
+            display: flex;
+        }
+        
+        width: 75%;
+        &--right {
+            width: 25%;
+        }
+
+        &-list {
+            margin: 0;
+            padding: 0;
+            max-width: 182px;
+            width: 100%;
+
+            &-item {
+                list-style: none;
+                display: block;
+                font-family: $inter;
+                color: $white;
+                text-align: left;
+                line-height: 30px;
+                font-weight: $normal;
+                font-size: $medium;
+
+                &:hover {
+                    color: $primary-active;
+                }
+            }
+        }
+    }
+
+    &-title {
+        margin: 0;
+        text-align: left;
+        font-size: $medium;
+        line-height: 30px;
+        font-family: $inter;
+        font-weight: $normal;
+        color: $white;
+   
+        
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 40px;
+            height: 4px;
+            background-color: $primary-active;
+            margin-right: 20px;
+            margin-bottom: 5px;
+          }
+    }
+
+    &-headline {
+        font-family: $inter;
+        font-size: 40px;
+        font-weight: $bold;
+        line-height: 56px;
+        text-align: left;
+        margin: 0;
+        width: 50%;
+        color: $white;
+    }
+
+    &-copy {
+        font-family: $inter;
+        color: $white;
+        text-align: left;
+        line-height: 30px;
+        font-size: $medium;
+
+      
+    
+    }
+}
+
+
+@include media(desktopxl) {
+    .footer {
+        width: 100%;
+    }
+}
+
+@include media(desktop) {
+    .footer {
+        width: 100%;
+    }
+}
+
+@include media(tablet) {
+    .footer {
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        &-column {
+            width: 50%;
+
+            &--right {
+                width: 50%;
+            }
+        }
+
+        &-headline {
+            width: 90%;
+        }
+    }
+}
+
+@include media(mobile) {
+    .footer {
+        &-row {
+            flex-direction: column;
+            &:last-child {
+                padding-top: 34px;
+                .footer-column {
+                    padding-bottom: 34px;
+                }
+            }
+        }
+        &-column {
+            width: 100%;
+            &-list {
+                &-item {
+                    font-size: $small;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        &-headline {
+            width: 100%;
+            font-size: $medium;
+            line-height: 30px;
+        }
+        &-copy {
+            font-size: $small;
+            line-height: 26px;
+        }
+      
+    }
+  
+   }
