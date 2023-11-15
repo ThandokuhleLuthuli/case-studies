@@ -5,7 +5,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
-    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 0 80px 80px 80px;
     
 

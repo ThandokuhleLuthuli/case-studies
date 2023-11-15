@@ -1,9 +1,10 @@
 @import "/src/styles/variables";
 
 .menu {
-
+    max-width: 100%;
     background-color: $primary-menu;
     padding: 20px 80px;
+    box-sizing: border-box;
 
     &-inner {
         display: flex;
