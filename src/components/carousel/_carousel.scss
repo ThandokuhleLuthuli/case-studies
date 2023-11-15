@@ -50,7 +50,7 @@
             height: 4px;
             background-color: $primary-active;
           }
-          background-color: $transparent;
+          background-color: $colour-background-transparent;
           padding: 24px 0 24px 24px;
           position: absolute;
           bottom: 0;
@@ -65,7 +65,7 @@
           font-size: $large;
           font-weight: $bold;
           line-height: 38.4px;
-          color: $white;
+          color: $colour-copy-white;
           padding-top: 16px;
           padding-bottom: 16px;
           width: 100%;
@@ -75,7 +75,7 @@
         &-description {
           margin: 0;
           text-align: left;
-          color: $white;
+          color: $colour-copy-white;
           font-family: $inter;
           font-size: $regular;
           line-height: 24px;

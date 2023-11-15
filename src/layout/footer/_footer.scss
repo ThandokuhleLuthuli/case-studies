@@ -51,7 +51,7 @@
                 list-style: none;
                 display: block;
                 font-family: $inter;
-                color: $white;
+                color: $colour-copy-white;
                 text-align: left;
                 line-height: 30px;
                 font-weight: $normal;
@@ -71,7 +71,7 @@
         line-height: 30px;
         font-family: $inter;
         font-weight: $normal;
-        color: $white;
+        color: $colour-copy-white;
    
         
 
@@ -94,12 +94,12 @@
         text-align: left;
         margin: 0;
         width: 50%;
-        color: $white;
+        color: $colour-copy-white;
     }
 
     &-copy {
         font-family: $inter;
-        color: $white;
+        color: $colour-copy-white;
         text-align: left;
         line-height: 30px;
         font-size: $medium;

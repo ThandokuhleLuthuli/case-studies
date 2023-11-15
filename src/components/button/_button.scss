@@ -8,8 +8,9 @@
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
+    
     &--primary {
-        color: $white;
+        color: $colour-copy-white;
         background-color: $primary-menu;
         &:hover {
             background-color: $primary-active;
@@ -19,7 +20,7 @@
     &--secondary {
         color: $primary-menu;
         &:hover {
-            color: $white;
+            color: $colour-copy-white;
             background-color: $primary-active;
         }
     }
