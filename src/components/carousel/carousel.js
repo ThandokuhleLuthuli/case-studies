@@ -39,6 +39,7 @@ function Carousel() {
     
   //duplicated the slides for loop functionality in SwiperJS
   const duplicateSlides = data.concat(data);  
+   
   
 
   //conditional rendering: show preloader until fetch is resolve
